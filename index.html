@@ -20,8 +20,12 @@
     vr-mode-ui="enabled: false" 
     arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;" 
     renderer="antialias: true; alpha: true">
+    <!-- CARGAR EL MODELO DEL MARCADOR Y ASIGNARLE UN NOMBRE (ID)-->
+     <a-assets>
+        <a-assets-item id="marker_drop" src="marker_drop.glb"></a-assets-item>
+     </a-assets>
+     <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
     <!-- crear "cámara" ligada al móvil/gps -->
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
     <!-- crear objetos -->
     <!-- Posición seleccionada: UNLA - EDIF D : UN CUBO APARECE EN LA POSICIÓN INDICADA -->
     <a-entity 
