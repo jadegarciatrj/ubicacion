@@ -25,15 +25,19 @@
         <a-assets-item id="marker_drop" src="marker_drop.glb"></a-assets-item>
      </a-assets>
      <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+     <!--GENERAR OBJETOS Y TEXTOS EN LAS POSICIONES INDICADAS-->
+     <!--CANCHAS DE FUTBOL-->
+     <a-entity
+     gltf-model="#marker_drop"
+     gps-new-entity-place="latitude: 19.694941; longitude: -101.234107"
+     scale="20 20 20">
+     <a-entity
+     text="value: Canchas de futbol; align:center; side:double, width: 15;"></a-entity>
+     </a-entity>
     <!-- crear "cámara" ligada al móvil/gps -->
     <!-- crear objetos -->
     <!-- Posición seleccionada: UNLA - EDIF D : UN CUBO APARECE EN LA POSICIÓN INDICADA -->
-    <a-entity 
-        material='color: red' 
-        geometry='primitive: box' 
-        gps-new-entity-place="latitude: 19.696642; longitude: -101.235041" 
-        scale="10 10 10">
-    </a-entity>
+  
 </a-scene>
 </body>
 </html>
